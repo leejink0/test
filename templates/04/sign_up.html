@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+</head>
+
+<body>
+    <div style="width: 50%;">
+        <form action="" method="post">
+            <fieldset>
+                <legend>계정 생성</legend>
+                <input type="hidden" name="num" value="1000">
+                <label for="id">아이디 : <input type="text" id="id" size="20"  maxlength="20" required placeholder="아이디를 입력해주세요"></label>
+                <input type="submit" value="확인">
+                <br>
+                <label>비밀번호 : <input type="text" name="pwd"></label>
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend>필수입력</legend>
+                <label >이름 : <input type="text" name="name"></label>
+                <br>
+                <label>생년월일 : <input type="date" name="birtday"></label>
+                <br>
+                <label>나이 : <input type="number" name="age" min="1" max="100"></label>
+                <br>
+                <!-- <label for="ss">성별 : </label>
+                <input type="radio" name="ss" value="xx" checked>남자
+                <input type="radio" name="ss" value="xy">여자
+                <br>
+                <label for="hob">취미 : </label>
+                <input type="checkbox" id="ma" checked>등산
+                <input type="checkbox" id="fish">낚시
+                <input type="checkbox" id="game">게임
+                <input type="checkbox" id="book">독서
+                <br> -->
+                성별 : <input type="radio" id="man" value="M" checked> <label for="man">남자</label>
+				<input type="radio" id="woman" value="W"> <label for="woman">여자</label><br>
+
+				취미 : <input type="checkbox" id="hobby1" value="등산" checked> <label for="hobby1">등산</label>
+				<input type="checkbox" id="hobby2" value="낚시"> <label for="hobby2">낚시</label>
+				<input type="checkbox" id="hobby3" value="게임"> <label for="hobby3">게임</label>
+				<input type="checkbox" id="hobby4" value="독서"> <label for="hobby4">독서</label>
+                <br>
+                <label >프로필 이미지 등록 : <input type="file" name="uploadImage"></label>
+                <br>
+                <label >전화번호 : <input type="tel" name="phone"></label>
+                <br>
+                <label >이메일 : <input type="email" name="email"></label>
+            </fieldset>
+            <fieldset>
+                <legend>SNS(선택입력)</legend>
+                <label>SNS 주소 : <input type="mail" name="sns"></label> 
+                <br>
+                <!-- <label>SNS 인기도 등급(1~5)</label>
+                <progress value="1" max="5"></progress>
+                <br> -->
+                SNS 인기도 등급(1~5) : <input type="range" name="grade" value="1" min="1" max="5"><br>
+                <label>검색 키워드 :  <input type="search" name="keyword" autocomplete="on"></label>
+            </fieldset>
+            <fieldset>
+                <legend>추가 정보(선택입력)</legend>
+                <label>좋아하는 색 : <input type="color" name="color" value="#ffffff"></label>
+                <br>
+                <label>취침시간 : <input type="time" name="sleep"></label>
+                <br>
+                <label >희망 알람 날짜 및 시간 : <input type="datetime-local" name="alram"></label>
+            </fieldset>
+            <button type="submit">회원가입</button>
+            <button type="reset">다시입력</button>
+            <input type="button" value="이벤트버튼" onclick="window.open('templates/03/space.html')">
+        </form>
+    </div>
+</body>
+
+</html>

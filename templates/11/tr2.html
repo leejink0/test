@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #ex div {
+            float: left;
+            width: 100px;
+            height: 50px;
+            margin: 5px 10px;
+            padding: 5px;
+            color: #fff;
+            background-color: #00f;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        #ex:hover div {
+            height: 400px;
+        }
+
+        #ex .ease {
+            transition: height 3s ease;
+        }
+
+        #ex .linear {
+            transition: height 3s linear;
+        }
+
+        #ex .ease-in {
+            transition: height 3s ease-in;
+        }
+
+        #ex .ease-out {
+            transition: height 3s ease-out;
+        }
+
+        #ex .ease-in-out {
+            transition: height 3s ease-in-out;
+        }
+
+        #ex1 {
+            position: relative;
+            /*나 자신을 기준으로 움직인다*/
+            width: 500;
+            height: 150px;
+            margin: 0 auto;
+            border: 1px solid gray;
+            border-radius: 25px;
+            padding: 30px;
+            clear: both;
+        }
+
+        .box1 {
+            font-size: 12px;
+            position: relative;
+            width: 60px;
+            height: 60px;
+            background-color: #eee;
+        }
+
+        #ex1:hover .box1 {
+            transform: rotate(730deg);
+            margin-left: 450px;
+        }
+
+        p {
+            text-align: center;
+            padding-top: 4px;
+        }
+
+        #no-delay {
+            transition-duration: 3s;
+            border: 1px solid red;
+        }
+
+        #delay {
+            transition-duration: 3s;
+            transition-delay: 1s;
+            border: 1px solid blue;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="ex">
+        <div class="ease">ease</div>
+        <div class="linear">linear</div>
+        <div class="ease-in">ease-in</div>
+        <div class="ease-out">ease-out</div>
+        <div class="ease-in-out">ease-in-out</div>
+    </div>
+    <div id="ex1">
+        <div id="no-delay" class="box1">
+            <p>no-delay</p>
+        </div>
+        <div id="delay" class="box1">
+            <p>delay</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

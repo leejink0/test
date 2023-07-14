@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <link rel="stylesheet" href="./css/test.css">
+</head>
+
+<body>
+    <div id="container">
+        <nav class="nav1">
+            <ul>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">교육과정</a></li>
+                <li><a href="#">나의학습</a></li>
+                <li><a href="#">문의하기</a></li>
+            </ul>
+        </nav>
+        <div class="insert">
+            <table>
+                <caption>회원가입 양식</caption>
+                <tr>
+                    <td class="col1">이름</td>
+                    <td class="col2"><input type="text" name="name" maxlength="5"></td>
+                </tr>
+                <tr>
+                    <td class="col1">아이디</td>
+                    <td class="col2"><input type="text" name="id" maxlength="10">
+                        <input class="but1" type="button" value="중복확인" onclick="">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col1">비밀번호</td>
+                    <td class="col2"><input type="password" name="paw" maxlength="16">
+                        <p>※비밀번호는 <span class="num">문자, 숫자, 특수문자(~!@#$%^&*)의 조합
+                                10 ~ 16자리</span> 로 입력이 가능합니다.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col1">비밀번호 확인</td>
+                    <td class="col2"><input type="password" name="pawcheck" maxlength="16"></td>
+                </tr>
+                <tr>
+                    <td class="col1">이메일</td>
+                    <td class="col2"><input type="text" name="mailid"> <span class="a">@</span>
+                        <input type="text" name="email">
+                        <select name="mailslc">
+                            <option value="self" selected>직접입력</option>
+                            <option value="naver" >naver.com</option>
+                            <option value="gm" >gmail.com</option>
+                        </select>
+                        <input class="but2" type="button" value="이메일 중복확인" onclick="">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col1">학년/반</td>
+                    <td class="col2">
+                        <select name="grade">
+                            <option value="slcl" selected>선택</option>
+                            <option value="gl" >1</option>
+                            <option value="g2" >2</option>
+                            <option value="g3" >3</option>
+                        </select>
+                        <span class="g">학년</span>
+
+                        <select name="cls">
+                            <option value="slc2" selected>선택</option>
+                            <option value="c1">1</option>
+                            <option value="c2">2</option>
+                            <option value="c3">3</option>
+                        </select>
+                        <span class="g">반</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="create">
+            <input class="but3" type="button" value="가입취소" onclick="">
+            <input class="but4" type="button" value="회원가입" onclick="formCheck(this.form)">
+        </div>
+        <footer>
+            <div class="footer">
+                <p>전체서비스</p>
+                <p>이용약관</p>
+                <p>개인정보처리방침</p>
+                <p>통합검색</p>
+                <p>고객센터</p>
+                <p>© NAVER Corp.</p>
+
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

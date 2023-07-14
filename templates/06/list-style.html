@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>목록 스타일</title>
+    <style>
+       
+        .ul1{
+            list-style-type: square;
+        }
+        .ul1 li::marker{color: red;}
+        .ul2{ list-style-type: none;}
+        .ul3{list-style-image: url(./images/dot.png);}
+
+        .ol1{ list-style-type: lower-alpha;}
+        .ol2{ list-style-type: upper-roman;}
+    </style>
+</head>
+<body>
+    <h1>목록 스타일</h1>
+    <!-- 검정색 사각형 -->
+    <ul class="ul1">
+        <li>사과</li>
+        <li>배</li>
+        <li>감</li>
+        <li>귤</li>
+        <li>귤</li>
+        <li>포도</li>
+    </ul>
+    <!-- 블릿기호 미출력 -->
+    <ul class="ul2">
+        <li>파이썬</li>
+        <li>자바</li>
+        <li>자바스크립트</li>
+        <li>C++</li>
+        <li>HTML</li>
+    </ul>
+    <ol class="ol1">
+        <li>파이썬</li>
+        <li>자바</li>
+        <li>자바스크립트</li>
+        <li>C++</li>
+        <li>HTML</li>
+    </ol>
+    <ol class="ol2">
+        <li>파이썬</li>
+        <li>자바</li>
+        <li>자바스크립트</li>
+        <li>C++</li>
+        <li>HTML</li>
+    </ol>
+    <ul class="ul3">
+        <li>파이썬</li>
+        <li>자바</li>
+        <li>자바스크립트</li>
+        <li>C++</li>
+        <li>HTML</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform 함수 _skew</title>
+    <style>
+        .origin{
+            width: 160px;
+            height: 240px;
+            border: 1px solid #000;
+            float: left;
+            margin: 80px;
+        }
+        .skewx:hover{
+            -moz-transform: skewX(45deg);
+            -webkit-transform: skewX(45deg);
+            -o-transform: skewX(45deg);
+            -ms-transform: skewX(45deg);
+            transform: skewx(45deg);
+        }
+        .skewy:hover{
+            transform: skewy(15deg);
+        }
+        .skewxy:hover{
+            transform: skew(-25deg, -15deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="origin">
+        <div class="skewx">
+            <img src="/images/rose.jpg" alt="장미 이미지">
+        </div>
+    </div>
+    <div class="origin">
+        <div class="skewy">
+            <img src="/images/rose.jpg" alt="장미 이미지">
+        </div>
+    </div>
+    <div class="origin">
+        <div class="skewxy">
+            <img src="/images/rose.jpg" alt="장미 이미지">
+        </div>
+    </div>
+</body>
+</html>

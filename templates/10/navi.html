@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>link 스타일</title>
+    <link rel="stylesheet" href="./css/style3.css">
+</head>
+<body>
+    <div  class="container">
+        <nav class="nav1">
+            <ul>
+                <li><a href="#">이용 안내</a></li>
+                <li><a href="#">객실 소개</a></li>
+                <li><a href="#">예약 방법 및 요금</a></li>
+                <li><a href="#">예약 하기</a></li>
+            </ul>
+        </nav>
+        <form>
+            <fieldset>
+                <legend>사용자 정보</legend>
+                <label>이름  <input type="text" disabled></label>
+            </fieldset>
+            <fieldset>
+                <legend>신청 과목</legend>
+                <p>일달의 신청과목(1과목만 선택 가능)</p>
+                <label for="radio1"></label>
+                <input type="radio" name="subject" id="radio1" value="speaking"><span>회화</span>
+                <label for="radio2"></label>
+                <input type="radio" name="subject" id="radio2" value="gramar"><span>문법</span>
+                <label for="radio3"></label>
+                <input type="radio" name="subject" id="radio3" value="writing"><span>작문</span>
+            </fieldset>
+        </form>
+       
+        <div class="table1">
+            <h1>건강 식품 리스트</h1>
+            <table>
+                <tr><td>블루베리</td></tr>
+                <tr><td>토마토</td></tr>
+                <tr><td>아몬드</td></tr>
+                <tr><td>연어</td></tr>
+                <tr><td>마늘</td></tr>
+                <tr><td>녹차</td></tr>
+                <tr><td>호두</td></tr>
+                <tr><td>양파</td></tr>
+                <tr><td>바나나</td></tr>
+                <tr><td>수박</td></tr>
+            </table>
+        </div>
+        <div>
+            <h1>제품 목록</h1>
+            <ul>
+                <li class="hot">제품A</li>
+                <li>제품B</li>
+                <li class="hot">제품C</li>
+                <li>제품D</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

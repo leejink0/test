@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>2단 레이아웃</title>
+    <style>
+        div {
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        #container {
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        #header {
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .nav {
+            width: 920px;
+            float: left;
+            margin-bottom: 20px;
+            background-color: royalblue;
+        }
+
+        .nav ul {
+            list-style-type: none;
+        }
+
+        .nav ul li {
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+        .nav ul li a:hover {
+            background-color: lightgoldenrodyellow;
+        }
+
+        .nav ul li a {
+            font-size: 16px;
+            text-decoration: none;
+            color: #fff;
+            font-style: bold;
+            padding: 10px;
+        }
+
+        #sidebar1 {
+            background-color: skyblue;
+            margin-bottom: 20px;
+            margin-right: 20px;
+            float: left;
+            width: 150px;
+            height: 325px;
+
+        }
+
+        #contents {
+            margin-right: 20px;
+            margin-bottom: 20px;
+            float: left;
+            width: 490px;
+            height: 325px;
+
+        }
+
+        #sidebar2 {
+            margin-bottom: 20px;
+            float: right;
+            width: 150px;
+            height: 325px;
+        }
+
+        #footer {
+           
+            clear: both;
+            color: #fff;
+            background-color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>사이트 제목</h1>
+        </div>
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li><a href="#">메뉴1</a></li>
+                    <li><a href="#">메뉴2</a></li>
+                    <li><a href="#">메뉴3</a></li>
+                    <li><a href="#">메뉴4</a></li>
+
+                </ul>
+        </div>
+        <div id="sidebar1">
+            <h2>사이드 바</h2>
+            <ul>
+                <li>항목1 </li>
+                <li>항목2 </li>
+                <li>항목3 </li>
+                <li>항목4 </li>
+
+            </ul>
+        </div>
+        <div id="contents">
+            <h2>본문</h2>
+            <p>재산권의 행사는 공공복리에 적합하도록 하여야 한다. 정부는 회계연도마다 예산안을 편성하여 회계연도 개시 90일전까지 국회에 제출하고, 국회는 회계연도 개시 30일전까지 이를 의결하여야
+                한다.</p>
+
+            <p>대통령의 임기가 만료되는 때에는 임기만료 70일 내지 40일전에 후임자를 선거한다. 제2항과 제3항의 처분에 대하여는 법원에 제소할 수 없다. 언론·출판에 대한 허가나 검열과 집회·결사에
+                대한 허가는 인정되지 아니한다.</p>
+        </div>
+        <div id="sidebar2">
+            <h2>사이드 바</h2>
+            <ul>
+                <li>항목1 </li>
+                <li>항목2 </li>
+                <li>항목3 </li>
+                <li>항목4 </li>
+
+            </ul>
+        </div>
+
+        <div id="footer">
+            <h2>푸터</h2>
+            <p>저작권 정보</p>
+            <p>연락처 등</p>
+        </div>
+    </div>
+</body>
+
+</html>

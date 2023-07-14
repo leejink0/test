@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.nav1 {
+    width: 960px;
+    height: 60px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ccc;
+}
+
+.nav1 ul {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    list-style: none;
+}
+
+.nav1 ul li {
+    display: inline-block;
+    width: 150px;
+    padding: 10px;
+}
+
+.nav1 a:link,
+.nav1 a:visited {
+    font-size: 14px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav1 a:hover,
+.nav1 a:focus {
+    /* 마우스가 올라왔거나 클릭 후 상태 */
+    background-color: #222;
+    color: #fff;
+}
+
+.nav1 a:active {
+    /* 마우스로 선택 되어졌을때 */
+    background-color: #f00;
+}
+
+form fieldset {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+form legend {
+    font-size: 20px;
+    font-weight: bold;
+    color: #09f;
+}
+
+input:disabled {
+    background: #ddd;
+    border: 1px solid #ccc;
+}
+
+input:checked+span {
+    color: #09f;
+    font-weight: bold;
+}
+
+.table1 {
+    text-align: center;
+    color: #2b2b2b;
+}
+
+table {
+    width: 200px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+td {
+    text-align: left;
+    padding: 5px;
+    padding-left: 20px;
+}
+
+table tr:nth-child(2n+1) {
+    /* 2n+1: 홀수 값만 색칠 */
+    background-color: #eee;
+    color: #000;
+}
+
+li.hot::after {
+    content: "HOT";
+    color: #fff;
+    background-color: #f00;
+    padding: 2px 4px;
+    margin: 0 10px;
+    font-size: x-small;
+    border-radius: 3px;
+}
+ul li{
+    margin: 15px;
+
+}

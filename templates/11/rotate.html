@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform 함수_Rotate</title>
+    <style>
+        .origin1{
+            width: 210px;
+            height: 200px;
+            border: 1px solid #00F;
+            float: left;
+            margin: 40px;
+        }
+        .rotate1:hover{
+            transform: rotate(25deg);
+        }
+        .rotate2:hover{
+            transform: rotate(-40deg);
+        }
+        .origin2{
+            width: 210px;
+            height: 200px;
+            border: 1px solid #00f;
+            float: left;
+            margin: 40px;
+            perspective: 200px;
+        }
+        .rotatex:hover{
+            transform: rotateX(50deg);
+        }
+        .rotatey:hover{
+            transform: rotatey(50deg);
+        }
+        .rotatez:hover{
+            transform: rotatez(50deg);
+        }
+        .rotatexyz:hover{
+            transform: rotate3d(2.5, 1.2, -1.5, 50deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="origin1">
+        <div class="rotate1">
+            <img src="/images/fruit.jpg" alt="토마토 이미지">
+        </div>
+    </div>
+    <div class="origin1">
+        <div class="rotate2">
+            <img src="/images/fruit.jpg" alt="토마토 이미지">
+        </div>
+    </div>
+    <div class="origin2">
+        <div class="rotatex">
+            <img src="/images/fruit.jpg" alt="">
+        </div>
+    </div>
+    <div class="origin2">
+        <div class="rotatey">
+            <img src="/images/fruit.jpg" alt="">
+        </div>
+    </div>
+    <div class="origin2">
+        <div class="rotatez">
+            <img src="/images/fruit.jpg" alt="">
+        </div>
+    </div>
+    <div class="origin2">
+        <div class="rotatexyz">
+            <img src="/images/fruit.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
